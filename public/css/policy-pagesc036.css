@@ -1,0 +1,133 @@
+/* ======================================================
+POLICY PAGES ONLY
+Header/Footer CSS comes from:
+css/common-header.css
+css/common-footer.css
+====================================================== */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden !important;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef4ff;
+    color:#172033;
+    font-family:'Inter',Arial,sans-serif;
+}
+
+.policy-page-wrap{
+    width:100%;
+    max-width:100%;
+    min-height:70vh;
+    background:#eef4ff;
+    padding:84px 16px 80px;
+    overflow-x:hidden !important;
+}
+
+.policy-card{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    background:#fff;
+    border:1px solid #e2eaf5;
+    border-radius:24px;
+    box-shadow:0 16px 40px rgba(0,53,128,.08);
+    padding:44px;
+    overflow:hidden;
+}
+
+.policy-card,
+.policy-card *{
+    max-width:100%;
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+}
+
+.policy-card h1{
+    color:#003580;
+    font-size:36px;
+    font-weight:950;
+    margin:0 0 28px;
+    line-height:1.15;
+}
+
+.policy-content{
+    color:#172033;
+    font-size:16px;
+    font-weight:650;
+    line-height:1.8;
+}
+
+.policy-content h2,
+.policy-content h3,
+.policy-heading{
+    display:block;
+    color:#003580;
+    font-size:18px;
+    font-weight:950;
+    margin:26px 0 12px;
+    line-height:1.35;
+}
+
+.policy-content p{
+    color:#172033;
+    font-size:16px;
+    font-weight:650;
+    line-height:1.8;
+    margin:0 0 18px;
+}
+
+.policy-content ul,
+.policy-content ol{
+    padding-left:22px;
+    margin:0 0 18px;
+}
+
+.policy-content li{
+    margin:0 0 8px;
+}
+
+.policy-content a{
+    color:#0052cc;
+    word-break:break-word;
+}
+
+.policy-content img{
+    max-width:100%;
+    height:auto;
+}
+
+.policy-content table{
+    max-width:100%;
+    display:block;
+    overflow-x:auto;
+}
+
+@media(max-width:900px){
+    .policy-page-wrap{
+        padding:50px 12px 60px;
+    }
+
+    .policy-card{
+        padding:26px 18px;
+        border-radius:18px;
+    }
+
+    .policy-card h1{
+        font-size:28px;
+    }
+
+    .policy-content,
+    .policy-content p{
+        font-size:15px;
+    }
+}

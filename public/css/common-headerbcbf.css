@@ -1,0 +1,141 @@
+.site-header{
+    width:100%;
+    padding:16px 48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:9999;
+    border-bottom:1px solid rgba(229,237,248,.95);
+    box-shadow:0 10px 30px rgba(16,24,40,.08);
+}
+
+.site-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#003580;
+    min-width:max-content;
+}
+
+.site-brand img{
+    height:52px;
+    width:auto;
+    object-fit:contain;
+    display:block;
+}
+
+.brand-mark{
+    width:48px;
+    height:48px;
+    border-radius:16px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#003580,#0052cc);
+    color:#fff;
+    font-weight:900;
+    font-size:18px;
+}
+
+.brand-text{
+    font-size:28px;
+    font-weight:900;
+    color:#003580;
+    letter-spacing:-.5px;
+}
+
+.mobile-menu-btn{
+    display:none;
+    width:44px;
+    height:44px;
+    border:0;
+    border-radius:14px;
+    background:#eef4ff;
+    color:#003580;
+    font-size:24px;
+    font-weight:900;
+    cursor:pointer;
+}
+
+.site-nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.site-nav a{
+    color:#344054;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:800;
+    padding:11px 14px;
+    border-radius:12px;
+    transition:.25s ease;
+}
+
+.site-nav a:hover{
+    color:#003580;
+    background:#eef4ff;
+}
+
+.site-nav .outline-link{
+    border:1px solid #d7e4f5;
+    color:#003580;
+    background:#fff;
+}
+
+.site-nav .login-link{
+    color:#fff;
+    background:linear-gradient(90deg,#ff6d00,#ff9800);
+    box-shadow:0 10px 24px rgba(255,109,0,.22);
+}
+
+@media(max-width:900px){
+    .site-header{
+        padding:14px 18px;
+        flex-wrap:wrap;
+    }
+
+    .mobile-menu-btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        margin-left:auto;
+    }
+
+    .site-nav{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        background:#fff;
+        border:1px solid #e5edf8;
+        border-radius:18px;
+        padding:12px;
+        box-shadow:0 14px 34px rgba(16,24,40,.08);
+    }
+
+    .site-nav.show{
+        display:flex;
+    }
+
+    .site-nav a{
+        width:100%;
+        text-align:center;
+    }
+
+    .site-brand img{
+        height:44px;
+    }
+
+    .brand-text{
+        font-size:23px;
+    }
+}
